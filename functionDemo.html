@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<script>
+    //DEFINE FUNCTIONS
+    function sum(num1,num2){
+        var result = num1 + num2;
+        document.writeln("The Sum of "+num1+" and "+num2+" is : "+result);
+    }
+    //FUNCTION WITH RETURN STATEMENT
+    function getRectArea(length, width){
+        if(width > 0 && length > 0){
+            document.writeln("<br>Calculating Area of Rectangle with Length : "+length+" and Width : "+width+"<br>");
+            return length * width;
+        }
+        return 0;
+    }
+</script>
+<body>
+    <H1 style="color: blue;">JS Functions Demo</H1>
+    <hr>
+    <script>
+        //CALLING FUNCTIONS
+        sum(10,20);
+        sum(100,200);
+
+        var area = getRectArea(10,20);
+        document.writeln("The Area of Rectangle is : "+area);
+
+        area = getRectArea(15,25);
+        document.writeln("<br>The Area of Rectangle is : "+area);
+
+        area = getRectArea(-15,25);
+        document.writeln("<br>The Area of Rectangle is : "+area);
+    </script>
+</body>
+</html>

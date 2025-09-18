@@ -1,0 +1,40 @@
+<!-- Technology which is used to make web pages interactive is called JavaScript. It is a client-side scripting language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Embedded in HTML</title>
+</head>
+
+<body>
+    <h1 style="color : brown">Java Script Introduction</h1>
+    <hr>
+    <script>
+        document.writeln("Hello World from JavaScript");
+        document.writeln("<br>This is a new Line");
+        document.writeln("<h2>This is a heading from javascript</h2>");
+
+        var num1, num2, sum;
+
+        name = prompt("Enter your name");
+        num1 = parseInt(prompt("Enter first number"));
+        num2 = parseInt(prompt("Enter second number"));
+        sum = num1 + num2;
+
+
+        document.writeln("<br> Hello " + name);
+        document.writeln("<br> The sum of " + num1 + " and " + num2 + " is: " + sum);
+
+        //prints value in console
+        console.log("Hello from Console");
+        console.log("Sum is: " + sum);
+        console.log("Hello"+name)
+
+        alert("Hello " + name + "\nThe sum of " + num1 + " and " + num2 + " is: " + sum);
+        alert("This is an alert box");
+    </script>
+</body>
+
+</html>

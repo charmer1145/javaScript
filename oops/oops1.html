@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOPS IN JS</title>
+  </head>
+  <style>
+    .empid {
+      color: red;
+    }
+  </style>
+  <body>
+    <script>
+      class employee {
+        #id;
+        #name;
+        #salary;
+
+        constructor(id, name, salary) {
+          this.#id = id;
+          this.#name = name;
+          this.#salary = salary;
+        }
+        getId() {
+          return this.#id;
+        }
+        getName() {
+          return this.#name;
+        }
+        getSalary() {
+          return this.#salary;
+        }
+        setId(id) {
+          this.#id = id;
+        }
+        setName(name) {
+          this.#name = name;
+        }
+        setSalary(salary) {
+          this.#salary = salary;
+        }
+        display() {
+          document.write(
+            "<br> --------------------------------------------------"
+          );
+          document.write("<br>employee id: " + this.#id );
+          document.write("<br>employee name: " + this.#name);
+          document.write("<br>employee salary: " + this.#salary);
+        }
+      }
+      var emp1 = new employee(101, "Sam", 45000);
+      var emp2 = new employee(102, "Mac", 55000);
+      var emp3 = new employee(103, "Eva", 65000);
+
+      emp1.setName("John");
+      emp2.setSalary(60000);
+
+      emp1.display();
+      emp2.display();
+      emp3.display();
+    </script>
+  </body>
+</html>
